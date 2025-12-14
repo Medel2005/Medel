@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My IT Educational Journey - Cebu & Bohol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">💻 My IT Journey</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#tours" onclick="closeMenu()">My Tours</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="PROF.jpg.jfif" alt="PROF" class="profile-img">
+            <h1>Medel Kaye Cabillion</h1>
+            <p>Exploring IT and Technology through Educational Adventures in Cebu and Bohol</p>
+            <div class="cta-buttons">
+                <a href="#tours" class="btn btn-primary">View My Journey</a>
+                <a href="#gallery" class="btn btn-secondary">See Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours">
+        <div class="section-header">
+            <h2>My IT Educational Tours</h2>
+            <p>Discover the tech hubs I've visited in Cebu and Bohol</p>
+        </div>
+        <div class="tours-grid">
+            <!-- Tour Card 1 -->
+            <div class="tour-card" onclick="openModal('modal1')">
+                <img src="cebuUP.jpg.jfif" alt="cebuUP" class="gallery-img">
+                <div class="tour-content">
+                    <div class="tour-header">
+                        <div>
+                            <h3>Cebu UP InIT</h3>
+                            <div class="tour-location">📍 Gorordo Avenue, Lahug, Cebu City </div>
+                        </div>
+                        <div class="tour-date">Nov 12, 2025</div>
+                    </div>
+                    <p class="tour-description">
+                        It operates as a Technology Business Incubator (TBI), a facility designed to nurture and accelerate the growth of promising technology-based start-up ideas and ventures in the Central Visayas region, with a focus on Information and Communication Technology (ICT), and Creatives and Multimedia.
+                    </p>
+                    <div class="tour-reflection">
+                        <h4>💭 My Reflection</h4>
+                        <p>Rivan Institute in Cebu provides a compelling reflection on the importance of deep, specialized technical training in a rapidly evolving IT landscape. The commitment to internationally recognized certifications, particularly Cisco (CCNA/CCNP) and Cybersecurity, signifies a focus on global professional standards.
+
+                            The institute’s success lies in its intensive, hands-on pedagogical approach. It reflects the understanding that true mastery in networking and security demands practical configuration and troubleshooting, not just theoretical knowledge. This environment fosters a disciplined and resilient attitude among students, preparing them not just for a job, but for the inherent pressure of managing critical IT infrastructure. By providing a structured path to industry certification, Rivan efficiently bridges the gap between raw talent and high-demand, high-skilled IT careers, directly fueling the specialized talent needs of Cebu's technology sector.</p>
+                    </div>
+                    <span class="read-more-btn">Read More →</span>
+                </div>
+            </div>
+
+            <!-- Tour Card 2 -->
+            <div class="tour-card" onclick="openModal('modal2')">
+                <img src="RivanIT2.jfif" alt="Rivan" class="gallery-img">
+                <div class="tour-content">
+                    <div class="tour-header">
+                        <div>
+                            <h3>Rivan IT</h3>
+                            <div class="tour-location">📍 Rivan IT Building, Englis St., V. Rama Ave., Cebu City, Philippines</div>
+                        </div>
+                        <div class="tour-date">Nov 13,2025</div>
+                    </div>
+                    <p class="tour-description">
+                        It appears there might be a slight mix-up in the request. The term "Rivan IT Cebu" primarily refers to Rivan Institute, an IT training and certification provider in Cebu, which offers courses like Cisco CCNA/CCNP, Cybersecurity, and cloud technologies.
+                    </p>
+                    <div class="tour-reflection">
+                        <h4>💭 My Reflection</h4>
+                        <p>UP CeBu InIT's core motivation is to empower regional talents to become creators, shifting the mindset from seeking jobs to founding start-ups. This is achieved by cultivating an innovative ecosystem where students and entrepreneurs are "Inspired to Innovate."
+
+                            While its main focus is ICT and creatives, the operational needs often involve configuring telephones and related voice communication systems (VoIP) to support its incubatees. The facility provides the necessary physical and digital infrastructure—including connectivity and communication tools—to ensure these new technology ventures can run efficiently and compete in the modern, connected world. The goal is to make entrepreneurship viable and globally reachable from Cebu.</p>
+                    </div>
+                    <span class="read-more-btn">Read More →</span>
+                </div>
+            </div>
+
+            <!-- Tour Card 3 -->
+            <div class="tour-card" onclick="openModal('modal3')">
+                <img src="Dynata.jpg.jfif" alt="Dynata" class="gallery-img">
+                <div class="tour-content">
+                    <div class="tour-header">
+                        <div>
+                            <h3>Dynata </h3>
+                            <div class="tour-location">📍 MEZ II, Basak, Lapu-Lapu City, Cebu, Philippines</div>
+                        </div>
+                        <div class="tour-date">Nov 13, 2025</div>
+                    </div>
+                    <p class="tour-description">
+                        Dynata is a global market research data company that rebranded from Research Now SSI in 2019. It's known locally as Dynata and serves as a hub for their data collection and research operations in the Asia-Pacific region, employing people for roles like Research Interviewers.
+                    </p>
+                    <div class="tour-reflection">
+                        <h4>💭 My Reflection</h4>
+                        <p>Dynata Cebu, as part of the world’s largest first-party data platform, reflects the rigor and high-demand nature of global market research. Employees often experience intensive shifts and frequent overtime, driven by the need to service US/international clients and meet strict project deadlines. This environment fosters resilience but can challenge work-life balance.
+
+                            Crucially, the reflection includes the necessity for clear emergency protocols and swift communication. Given the high-pressure, non-traditional hours, the well-being and security of agents—especially during unforeseen events, like public health or severe weather emergencies—become paramount. The company's resilience is tested not just by data quotas, but by its capacity to ensure employee safety and business continuity under duress.</p>
+                    </div>
+                    <span class="read-more-btn">Read More →</span>
+                </div>
+            </div>
+
+            <!-- Tour Card 4 -->
+            <div class="tour-card" onclick="openModal('modal4')">
+                <img src="Mata.jpg.jfif".jpg" alt="Mata" class="gallery-img">
+                <div class="tour-content">
+                    <div class="tour-header">
+                        <div>
+                            <h3>Mata technologies Inc.</h3>
+                            <div class="tour-location">📍 Unit 203 Cardoc Building , Gen. Maxilom Ave., Cebu City, Cebu 6000​</div>
+                        </div>
+                        <div class="tour-date">Nov 14,2025</div>
+                    </div>
+                    <p class="tour-description">
+                        Mata Technologies is a Cebu-based tech company specializing in immersive virtual reality (VR) and 360° virtual tours for real estate and tourism, creating interactive digital experiences like virtual maps (e.g., Suroy Cebu) and enhanced customer engagement for local businesses and destinations. They leverage AI for smart tourism, disaster management, education, and smart community solutions, aiming to uplift local economies and preserve heritage through innovative digital tools, partnering with organizations like DOST and PLDT Enterprise.
+                    </p>
+                    <div class="tour-reflection">
+                        <h4>💭 My Reflection</h4>
+                        <p>Mata Technologies, Inc. is a Cebu-based company specializing in immersive virtual reality (VR) solutions for the real estate and tourism industries. The company's work, values, and employee feedback reflect a strong commitment to innovation, a positive work culture, and a mission to "virtualize" the Philippines.</p>
+                    </div>
+                    <span class="read-more-btn">Read More →</span>
+                </div>
+            </div>
+
+            <!-- Tour Card 5 -->
+            <div class="tour-card" onclick="openModal('modal5')">
+                <img src="ManMade.jpg.jfif".jpg" alt="ManMade" class="gallery-img">
+                <div class="tour-content">
+                    <div class="tour-header">
+                        <div>
+                            <h3>Man made forest</h3>
+                            <div class="tour-location">📍 Tourist attraction in Loboc, Bohol
+                            </div>
+                        </div>
+                        <div class="tour-date">Nov 15, 2025</div>
+                    </div>
+                    <p class="tour-description">
+                        The Bilar Man-Made Forest in Bohol is a dense, 2-kilometer-long forest of thousands of mahogany trees planted in a reforestation project between the towns of Loboc and Bilar. The uniform, straight-lined planting creates a unique, symmetrical, and tunnel-like canopy, making it a popular and cool tourist spot for photos and short nature walks. 
+                    </p>
+                    <div class="tour-reflection">
+                        <h4>💭 My Reflection</h4>
+                        <p>The Bilar Man-Made Forest in Bohol is a two-kilometer stretch of dense mahogany trees, famous for its stunning tunnel-like views and cool, shaded atmosphere, serving as a popular photo stop and testament to a successful reforestation project started decades ago by planting trees along the Loay Interior Road between Loboc and Bilar towns. It offers a refreshing break from the heat and a chance for reflection on nature restoration, though discussions exist regarding its limited biodiversity compared to native forests, making it a symbol of both human effort and ongoing ecological considerations. </p>
+                    </div>
+                    <span class="read-more-btn">Read More →</span>
+                </div>
+            </div>
+
+            <!-- Tour Card 6 -->
+            <div class="tour-card" onclick="openModal('modal6')">
+                <img src="Choco.jpg.jfif".jpg" alt="Choco" class="gallery-img">
+                <div class="tour-content">
+                    <div class="tour-header">
+                        <div>
+                            <h3>Chocolate Hills</h3>
+                            <div class="tour-location">📍 Chocolate Hills, Bohol</div>
+                        </div>
+                        <div class="tour-date">Jun 2024</div>
+                    </div>
+                    <p class="tour-description">
+                       The Chocolate Hills in Bohol, Philippines, are hundreds of uniformly cone-shaped limestone mounds that turn a rich brown during the dry season, resembling chocolate kisses, hence their name, with lush green grass covering them in the wet season. This unique karst landscape, formed by erosion of uplifted coral reefs over millions of years, features over 1,200 symmetrical hills, creating a surreal, iconic tourist attraction with panoramic viewpoints.
+                    </p>
+                    <div class="tour-reflection">
+                        <h4>💭 My Reflection</h4>
+                        <p>Visiting the Chocolate Hills in Bohol is a surreal experience, feeling like stepping onto another planet with its thousands of perfectly conical mounds, a testament to nature's unique artistry, transforming from green to iconic brown during dry seasons, reminding us of geological processes, coral reefs uplifted and weathered, a humbling display of Earth's ancient history and constant change, making them a visually stunning, must-see wonder that inspires awe and reflection on time and landscape.</p>
+                    </div>
+                    <span class="read-more-btn">Read More →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header">
+            <h2>About My IT Journey</h2>
+            <p>Learning through exploration and hands-on experiences</p>
+        </div>
+        <div class="about-container">
+            <img src="Prof2.jpg" alt="Prof2" class="gallery-img">
+            <div class="about-content">
+                <h3>Aspiring IT Professional</h3>
+                <p>Your journey begins by finding what problem you genuinely want to solve—that’s your focus (e.g., helping people use technology, protecting their privacy, or building useful tools).</p>
+                <p>Forget robotic learning; build things you care about, even small personal projects, because that's how passion turns into skill. When you get a starting job, remember your biggest assets are empathy and communication, not just code. IT is about helping people use tech.</p>
+                <p>Keep your curiosity alive; the field is always changing. Network with mentors and peers. Your career isn't a checklist; it's a series of interesting problems you solve, one human interaction at a time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="gallery">
+        <div class="section-header">
+            <h2>📸 My Photo Gallery</h2>
+            <p>Capturing memorable moments from our IT educational tours across Cebu and Bohol</p>
+        </div>
+        <div class="gallery-grid">
+            
+            <div class="gallery-item" onclick="openModal('gallery1')">
+                <img src="South2.jpg.jfif".jpg" alt="South" class="gallery-img">
+                <span class="gallery-badge">Group Photo</span>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">South farm Bohol</div>
+                    <div class="gallery-description">South Farm Panglao is a 9-hectare organic farm and nature park in Bohol. It offers a family-friendly experience focused on sustainable, rural life. Visitors can enjoy activities like animal feeding, horseback riding, fishing, and artisan workshops (weaving, painting, and cooking), with dining options using farm-fresh ingredients.</div>
+                </div>
+            </div>
+
+            
+            <div class="gallery-item" onclick="openModal('gallery2')">
+                <img src="statue.jpg.jfif".jpg" alt="statue" class="gallery-img">
+                <span class="gallery-badge">Historical Statues</span>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Lapulapu Monument</div>
+                    <div class="gallery-description">The Lapu-Lapu Monument is a significant historical and cultural landmark located at the Mactan Shrine (or Liberty Shrine) in Lapu-Lapu City, Mactan Island, Cebu, Philippines. It stands as a powerful tribute to the first Filipino hero, Lapu-Lapu, who defeated the Spanish forces led by explorer Ferdinand Magellan in the Battle of Mactan in 1521.</div>
+                </div>
+            </div>
+
+           
+            <div class="gallery-item" onclick="openModal('gallery3')">
+                <img src="liberty.jpg.jfif".jpg" alt="liberty" class="gallery-img">
+                <span class="gallery-badge">Mactan Shrine</span>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Mactan Shrine</div>
+                    <div class="gallery-description">The Mactan Shrine, also known as the Liberty Shrine, is a national memorial park in Lapu-Lapu City on Mactan Island, Cebu, Philippines. It commemorates the Battle of Mactan which took place on April 27, 1521, a pivotal event marking the first successful resistance of Filipinos against Spanish colonization.</div>
+                </div>
+            </div>
+
+            
+            <div class="gallery-item" onclick="openModal('gallery4')">
+                <img src="church.jpg.jfif".jpg" alt="church" class="gallery-img">
+                <span class="gallery-badge">Church</span>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Santo Niño: Hope of the pilgrim church</div>
+                    <div class="gallery-description">Santo Niño: Hope of the Pilgrim Church" is not the title of a single book, but rather a pastoral and religious theme used for the annual Fiesta Señor celebration in Cebu, Philippines, which honors the Santo Niño de Cebú (Holy Child Jesus).</div>
+                </div>
+            </div>
+
+           
+            <div class="gallery-item" onclick="openModal('gallery5')">
+                <img src="cert.jpg.jfif".jpg" alt="cert" class="gallery-img">
+                <span class="gallery-badge">certificate</span>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Certificate of completion</div>
+                    <div class="gallery-description">Who, through active participation, sincere effort and meaningful attendance has successfully completed the educational tour in cebu and bohol on November 12-15, 2025</div>
+                </div>
+            </div>
+
+            
+            <div class="gallery-item" onclick="openModal('gallery6')">
+                <img src="magellan.jpg.jfif".jpg" alt="magellan" class="gallery-img">
+                <span class="gallery-badge">Church</span>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Magellan cross</div>
+                    <div class="gallery-description">The Magellan's Cross is one of the most famous historical and religious landmarks in Cebu City, Philippines. It is a major pilgrimage site that symbolizes the birth of Christianity in the country.</div>
+                </div>
+            </div>
+
+            
+            <div class="gallery-item" onclick="openModal('gallery7')">
+                <img src="Vista.jpg.jfif".jpg" alt="Vista" class="gallery-img">
+                <span class="gallery-badge">Hotel</span>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Vista Suites Panglao</div>
+                    <div class="gallery-description">Panglao Vista Suites by SMS Hospitality is a new, modern hotel in Dauis, Bohol. It offers comfortable rooms, a large outdoor pool, a gym, and a restaurant, all with a quiet and clean atmosphere. Located minutes from Panglao International Airport and Alona Beach, it provides a convenient base for exploring Bohol.</div>
+                </div>
+            </div>
+
+            
+            <div class="gallery-item" onclick="openModal('gallery8')">
+                <img src="tarsier.jpg.jfif" alt="tarsier" class="gallery-img">
+                <span class="gallery-badge">Tarsier</span>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Roaming Tarsier</div>
+                    <div class="gallery-description">The Philippine Tarsier is one of the world's smallest primates, endemic to Bohol. Measuring 4-5 inches, it is known for its huge, fixed eyes (larger than its brain) and ability to rotate its head 180 degrees. As a nocturnal, solitary, and endangered species, it is best viewed silently in protected sanctuaries like the one in Corella.</div>
+                </div>
+            </div>
+
+            
+            <div class="gallery-item" onclick="openModal('gallery9')">
+                <img src="Mirror.jpg.jfif" alt="Mirror" class="gallery-img">
+                <span class="gallery-badge">Mirror of the World</span>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Mirror of the World, Bohol</div>
+                    <div class="gallery-description">The Sikatuna's Mirror of the World and Botanical Garden is one of Bohol's newest and most unique tourist attractions, located in the municipality of Sikatuna. It is a landscaped theme park designed to give visitors a "trip around the world" without leaving the Philippines.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="social-links">
+            <a href="#">📘</a>
+            <a href="#">📷</a>
+            <a href="#">🐦</a>
+            <a href="#">💼</a>
+        </div>
+        <p>&copy; 2024 My IT Journey</p>
+        <p style="margin-top: 0.5rem; opacity: 0.7;">Exploring technology in Cebu and Bohol 🇵🇭💻</p>
+    </footer>
+
+    <!-- Tour Modals -->
+    <div id="modal1" class="modal" onclick="closeModalOutside(event, 'modal1')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal1')">&times;</span>
+            <h2>Cebu UP InIT</h2>
+            <p style="color: #6366f1; margin: 1rem 0;">📍 Lahug, Cebu City • November 12, 2025</p>
+            <img src="cebuUP.jpg.jfif" alt="ceb" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <h3 style="margin-top: 2rem;">Full Reflection</h3>
+            <p style="line-height: 1.8; margin-top: 1rem; color: #64748b;">
+                Nurturing the Local Tech Ecosystem
+UP Cebu inIT has played a pivotal role in establishing Cebu as a significant hub for information and creative technology. As the "Queen City of the South" experiences rapid development, the incubator provides essential mentorship, training, and resources to help new tech companies grow and eventually "graduate" into independent, commercially viable businesses. Its success is a testament to the potential of academe-government partnerships in launching small technology companies sustainably into business. 
+A Culture of Resilience and Innovation
+Reflecting the broader spirit of UP Cebu—a university with a history of overcoming challenges and constant reinvention—the inIT program embodies the motto: "Nurtured to Create, Inspired to Innovate, Destined to Serve". The program goes beyond just business development; it integrates the university's research culture with real-world application, working with local businesses and government agencies to address regional needs and contribute to the nation's growth. 
+Community Impact and Future Vision
+The impact of UP Cebu inIT extends to the community, helping to develop a skilled workforce and contributing to Cebu's economic growth and status as an innovative city. By providing a platform for collaboration and skill-sharing, it helps bridge the gap between academic research and industry demands. Its ongoing activities, like participating in regional startup events and initiating community skills training, showcase a commitment to fostering a holistic and inclusive innovation ecosystem. 
+In essence, UP Cebu inIT is a successful model of how a public university can be a driving force for technological advancement and economic development, deeply rooted in its Cebuano heritage and committed to serving the wider community. 
+            </p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal" onclick="closeModalOutside(event, 'modal2')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal2')">&times;</span>
+            <h2>Rivan IT Cebu</h2>
+            <p style="color: #6366f1; margin: 1rem 0;">📍 Rivan IT Cebu • November 13, 2025</p>
+            <img src="Rivan.jpg.jfif" alt="Rivan" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <h3 style="margin-top: 2rem;">Full Reflection</h3>
+            <p style="line-height: 1.8; margin-top: 1rem; color: #64748b;">
+                My experience at Rivan IT Cebu was transformative. The instructors weren't just teachers; they were industry experts sharing real insights into high-paying fields like network security and cloud. The hands-on sessions with actual Cisco gear made complex topics like VOIP accessible. It wasn't just about passing exams; it was about building the confidence and practical skills needed for a strong IT career. The support extended beyond the classroom, with free seminars and career guidance, making me feel part of a dedicated community. It truly bridged the gap between what we learned in school and what the industry demands, giving me a significant edge as I start my career.
+        </div>
+    </div>
+
+    <div id="modal3" class="modal" onclick="closeModalOutside(event, 'modal3')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal3')">&times;</span>
+            <h2>Dynata</h2>
+            <p style="color: #6366f1; margin: 1rem 0;">📍 Cebu City • November 13, 2025</p>
+            <img src="Dynata2.jpg.jfif" alt="Dynata2" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <h3 style="margin-top: 2rem;">Full Reflection</h3>
+            <p style="line-height: 1.8; margin-top: 1rem; color: #64748b;">
+                Dynata Cebu provides a valuable starting point for those entering the workforce, offering a positive social atmosphere and foundational experience. However, employees seeking significant salary increases, rapid career advancement, or a less demanding environment might find it challenging long-term, as high workloads and inconsistent management are common concerns, as noted in many employee reviews.
+        </div>
+    </div>
+
+    <div id="modal4" class="modal" onclick="closeModalOutside(event, 'modal4')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal4')">&times;</span>
+            <h2>Mata Technologies Inc.</h2>
+            <p style="color: #6366f1; margin: 1rem 0;">📍 Cebu City • November 14, 2025</p>
+             <img src="MataP2.jpg" alt="MataP2" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <h3 style="margin-top: 2rem;">Full Reflection</h3>
+            <p style="line-height: 1.8; margin-top: 1rem; color: #64748b;">
+                Mata Technologies in Cebu is a forward-thinking tech company specializing in immersive experiences (VR/AR), virtual tours, and smart solutions for tourism, real estate, and disaster management, known for its innovative use of mapping and gamification to blend culture with tech for local and global impact, fostering a positive, growth-oriented culture praised by employees for support and development opportunities. They partner with government (DOST) and private sectors (PLDT) to virtualize the Philippines, creating digital access and economic opportunities.
+            </p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal" onclick="closeModalOutside(event, 'modal5')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal5')">&times;</span>
+            <h2>Man made Forest</h2>
+            <p style="color: #6366f1; margin: 1rem 0;">📍 Bohol City • November 15, 2025</p>
+           <img src="ManMade2.jpg.jfif" alt="ManMade2" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <h3 style="margin-top: 2rem;">Full Reflection</h3>
+            <p style="line-height: 1.8; margin-top: 1rem; color: #64748b;">
+                Ultimately, the man-made forest is a testament to human ingenuity and the capacity for environmental stewardship, demonstrating that bare landscapes can be transformed into lush green spaces through collective will. However, it also serves as a poignant reminder that true ecological restoration requires a holistic understanding of local ecosystems and the careful selection of native species to ensure a vibrant, living forest rather than just a beautiful, silent one. The forest stands as a complex, beautiful, and educational landmark in Bohol.
+            </p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal" onclick="closeModalOutside(event, 'modal6')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal6')">&times;</span>
+            <h2>Chocolate Hills</h2>
+            <p style="color: #6366f1; margin: 1rem 0;">📍 Bohol City • November 15, 2025</p>
+             <img src="Choco2.jpg" alt="Choco2" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <h3 style="margin-top: 2rem;">Full Reflection</h3>
+            <p style="line-height: 1.8; margin-top: 1rem; color: #64748b;">
+                marveling at a unique geological wonder—hundreds of symmetrical, cone-shaped mounds that turn from lush green (rainy season) to iconic brown (dry season), resembling chocolate drops, with origins in uplifted coral and erosion, prompting awe at nature's artistry, but also facing human challenges like unregulated development and mining, highlighting a tension between preservation and tourism/economic needs, as seen with recent resort controversies, making it a surreal, thought-provoking site about natural beauty, geological time, and conservation responsibility. 
+            </p>
+        </div>
+    </div>
+
+    <!-- Gallery Modals -->
+    <div id="gallery1" class="modal" onclick="closeModalOutside(event, 'gallery1')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('gallery1')">&times;</span>
+            <h2>SouthFarm Bohol</h2>
+            <img src="group.jpg.jfif" alt="group" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <p style="line-height: 1.8; color: #64748b;">
+                <strong>Location:</strong> SouthFarm, Panglao<br>
+                South Farm Panglao Bohol is a 9-hectare organic farm and nature-based, family-oriented tourist attraction located in Panglao Island, Bohol, Philippines. It promotes rural life, sustainability, and local craftsmanship.
+            </p>
+            <p style="margin-top: 1rem; font-style: italic; color: #6366f1;">
+            </p>
+        </div>
+    </div>
+
+    <div id="gallery2" class="modal" onclick="closeModalOutside(event, 'gallery2')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('gallery2')">&times;</span>
+            <h2>Lapu Lapu Monuments</h2>
+            <img src="lapu2.jpg.jfif" alt="lapu2" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <p style="line-height: 1.8; color: #64748b;">
+                <strong>Location:</strong> Lapu Lapu Monuments, Cebu City<br>
+                depicting the chieftain as a powerful warrior facing the sea, symbolizing Filipino resistance against invaders, especially after he defeated Ferdinand Magellan in 1521, marking early Filipino nationalism and defiance.
+            </p>
+        </div>
+    </div>
+
+    <div id="gallery3" class="modal" onclick="closeModalOutside(event, 'gallery3')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('gallery3')">&times;</span>
+            <h2>Mactan Shrine</h2>
+            <img src="shrine.jpg.jfif" alt="shrine" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <p style="line-height: 1.8; color: #64748b;">
+                <strong>Location:</strong> Mactan shrine, Cebu City<br>
+                the Filipino chieftain who defeated Spanish explorer Ferdinand Magellan, alongside the Magellan Monument and murals depicting the fight for Filipino bravery against foreign domination.
+            </p>
+        </div>
+    </div>
+
+    <div id="gallery4" class="modal" onclick="closeModalOutside(event, 'gallery4')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('gallery4')">&times;</span>
+            <h2>Santo Niño: Hope of the pilgrim church</h2>
+            <img src="church.jpg.jfif" alt="church" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <p style="line-height: 1.8; color: #64748b;">
+                <strong>location:</strong>  Basilica Minore del Santo Niño de Cebu.<br><br>
+
+                emphasizing the Holy Child as a source of unwavering faith, refuge, and love guiding Filipino Catholics on their spiritual journey, especially relevant during the Jubilee Year, with celebrations highlighting childlike trust and service.
+            </p>
+        </div>
+    </div>
+
+    <div id="gallery5" class="modal" onclick="closeModalOutside(event, 'gallery5')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('gallery5')">&times;</span>
+            <h2>Certificate</h2>
+            <img src="cert.jpg.jfif" alt="cert" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <p style="line-height: 1.8; color: #64748b;">
+                <strong>Given:</strong> Certificate of completion<br>
+                Certificate of completion, who attend educational tour completed November 12-15, 2025.
+            </p>
+        </div>
+    </div>
+
+    <div id="gallery6" class="modal" onclick="closeModalOutside(event, 'gallery6')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('gallery6')">&times;</span>
+            <h2>Magellan Cross</h2>
+            <img src="magellan3.jpg" alt="magellan3" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <p style="line-height: 1.8; color: #64748b;">
+                <strong>Location:</strong> Magellan Cross, Cebu City<br>
+                It is housed inside an octagonal pavilion and is considered a National Cultural Treasure, with the original wooden cross preserved and encased within a new, larger one made of tindalo wood to protect it from people who chipped away pieces believing it had miraculous powers.
+            </p>
+        </div>
+    </div>
+
+    <div id="gallery7" class="modal" onclick="closeModalOutside(event, 'gallery7')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('gallery7')">&times;</span>
+            <h2>Vista Suites Hotel</h2>
+            <img src="vistaa.jpg.jpg" alt="vistaa" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <p style="line-height: 1.8; color: #64748b;">
+                <strong>Location:</strong> Vista Suites, Panglao Ctiy, Bohol<br>
+                a modern resort on Panglao Island, Bohol, offering ocean/mountain views, an infinity pool, restaurant, and bar, ideal for relaxation with cozy, well-equipped rooms (balconies, AC, private baths) and amenities like free WiFi, airport transfers, and a fitness center, creating a tranquil yet convenient island escape close to the airport.
+            </p>
+        </div>
+    </div>
+
+    <div id="gallery8" class="modal" onclick="closeModalOutside(event, 'gallery8')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('gallery8')">&times;</span>
+            <h2>Tarsier Sanctuary</h2>
+            <img src="tarsier2.jpg.jfif" alt="tarsier2" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <p style="line-height: 1.8; color: #64748b;">
+                <strong>Location:</strong> Tarsier Sanctuary, Bohol City<br><br>
+                a small nocturnal primate known for its large eyes. These sanctuaries provide a natural environment for the tarsiers to live and reproduce while educating visitors on conservation.
+            </p>
+        </div>
+    </div>
+
+    <div id="gallery9" class="modal" onclick="closeModalOutside(event, 'gallery9')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('gallery9')">&times;</span>
+            <h2>Mirror of the World</h2>
+            <img src="mirrorr.jpg" alt="mirrorr" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; margin: 2rem 0;">
+            <p style="line-height: 1.8; color: #64748b;">
+                <strong>Journey:</strong> Mirror of the world, Bohol City<br>
+                a unique themed park featuring life-sized replicas of famous global landmarks like the Statue of Liberty, Eiffel Tower, and Christ the Redeemer.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
